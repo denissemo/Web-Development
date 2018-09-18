@@ -5,19 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Lab1</title>
 </head>
 
 <body>
-    <div class="a1">
-        <link rel="stylesheet" href="./css/style.css">
+    <div class="text-formatting">
+        <p>
+            <!--Жирный текст-->
+            <b>Text</b><br />
+            <!--Курсив-->
+            <i>Text</i><br />
+            <!-- Нижний индекс -->
+            H<sub>2</sub>O<br />
+            <!-- Верхний индекс -->
+            x<sup>3</sup><br />
+            <!-- Текст как есть -->
+            <pre>
+                 (\_/)
+                (='.'=)
+                (")_(")</pre>
+            <!-- Акцентированный текст -->
+            <em>Text</em><br />
+            <!-- Акцентированный текст, жирным начертанием -->
+            <strong>Text</strong>
+            <!-- Спецсимвол -->
+            &copy
+        </p>
+    </div>
+    <div class="list">
+        <!-- Маркированый список -->
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Text</li>
+            <li>Text</li>
+            <li>Text</li>
         </ul>
+        <!-- Нумерованый список -->
+        <ol>
+            <li>Text</li>
+            <li>Text</li>
+            <li>Text</li>
+        </ol>
+        <!-- Определение -->
+        <dl>
+            <dt>Text 1</dt>
+            <dd>Text 1</dd>
+            <dt>Text 2</dt>
+            <dd>Text 2</dd>
+        </dl>
+    </div>
+    <div class="link">
+        <!-- Ссылка на изображение -->
+        <p></p><a href="https://www.w3schools.com/w3images/fjords.jpg">Internet image</a><br />
+        <a href="./img/jpg_example.jpg">Local image</a></p>
+        <!-- Якорь -->
+        <a name="top"></a>
+        <p style="height:2000px;">Scroll down</p>
+        <a href="#top">To top ↑</a>
+    </div>
+    <div class="media">
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- Изображение -->
+        <img src="./img/svg_example.svg" alt="Alternative text">
+        <!-- Видео -->
+        <video width="400" controls>
+            <source src="./video/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <!-- Аудио -->
+        <audio controls>
+            <source src="./audio/A Day to Remember - All I Want.mp3" type="audio/mpeg">
+        </audio>
     </div>
 </body>
 
