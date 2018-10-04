@@ -1,0 +1,39 @@
+h2 {
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.btn::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn {
+    height: 80px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 750;
+    font-family: Roboto, Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 10px;
+    background: #DB2724;
+    box-shadow: 3px -3px #922724 inset;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #FF585C;
+}
+
+.button:active {
+    background: #D64848;
+    box-shadow: 0 3px #D64848 inset;
+}
