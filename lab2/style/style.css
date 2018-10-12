@@ -1,0 +1,413 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#scroll {
+    height: 2000px;
+}
+/************************* House 1 - Relative ******************************/
+.house_1 p {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 150%;
+}
+
+.house_1 {
+    height: 600px;
+    width: 600px;
+    position: relative;
+    display: block;
+    background-color: #9b5a5a;
+    top:30px;
+    left: 30px; 
+}
+
+.h1_front, .h1_window_snd_floor, .h1_balcony, .h1_stairs, .h1_window_fst_floor {
+     border: 10px solid #234888;
+}
+
+.h1_roof {
+    height: 0px;
+    width: 0px;
+    position: relative;
+    top: 30px;
+    left: 95px;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 150px solid #234888;
+    z-index: 2;
+}
+
+.h1_roof1 {
+    height: 0px;
+    width: 0px;
+    position: relative;
+    top: 10px;
+    left: -180px;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 133px solid whitesmoke;
+    z-index: 3;
+}
+
+
+.h1_front {
+    height: 350px;
+    width: 300px;
+    background-color: whitesmoke;
+    position: relative;
+    top: 20px;
+    left: 135px;
+   
+    z-index: 1;
+}
+
+.h1_window_snd_floor {
+    height: 75px;
+    width: 100px;
+    background-color: aqua;
+    position: relative;
+    left: 90px;
+    top: 30px;
+}
+
+.h1_frame {
+    height: 75px;
+    width: 10px;
+    background-color: #234888;
+    position: relative;
+    left: 45px;
+}
+
+.h1_balcony {
+    height: 60px;
+    width: 150px;
+    background-color: #f5f5f5a7;
+    position: relative;
+    top: -10px;
+    left: 65px;
+}
+
+.h1_b_frame1 {
+    height: 60px;
+    width: 10px;
+    background-color: #234888;
+    position: relative;
+    left: 47px;
+}
+
+.h1_b_frame2 {
+    height: 60px;
+    width: 10px;
+    background-color: #234888;
+    position: relative;
+    left: 47px;
+}
+
+.h1_door {
+    height: 90px;
+    width: 70px;
+    background-color: #234888;
+    position: relative;
+    top: 65px;
+    left: 70px;
+}
+
+.h1_stairs {
+    width: 100px;
+    height: 10px;
+    background-color: whitesmoke;
+    position: relative;
+    top: 65px;
+    left: 45px;
+}
+
+.h1_door_knob {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    top: 45px;
+    left: 45px;
+    background-color: whitesmoke;
+}
+
+.h1_window_fst_floor {
+    width: 45px;
+    height: 75px;
+    background-color: aqua;
+    top: -85px;
+    left: 185px;
+    position: relative;
+}
+
+/*****************************House 2 - Absolute********************************/
+
+.house_2 p {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 150%;
+}
+
+.house_2 {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    display: block;
+    background-color: #5a9b6e;
+    top: 660px;
+    left: 30px; 
+}
+
+.h2_front, .h2_window_snd_floor, .h2_balcony, .h2_stairs, .h2_window_fst_floor {
+     border: 10px solid #234888;
+}
+
+.h2_roof {
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 60px;
+    left: 95px;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 150px solid #234888;
+    z-index: 2;
+}
+
+.h2_roof1 {
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: 10px;
+    left: -180px;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 133px solid whitesmoke;
+    z-index: 3;
+}
+
+.h2_front {
+    height: 350px;
+    width: 300px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 203px;
+    left: 135px;
+    z-index: 1;
+}
+
+.h2_window_snd_floor {
+    height: 75px;
+    width: 100px;
+    background-color: aqua;
+    position: absolute;
+    left: 90px;
+    top: 30px;
+}
+
+.h2_frame {
+    height: 75px;
+    width: 10px;
+    background-color: #234888;
+    position: absolute;
+    left: 45px;
+}
+
+.h2_balcony {
+    height: 60px;
+    width: 150px;
+    background-color: #f5f5f5a7;
+    position: absolute;
+    top: 85px;
+    left: 65px;
+}
+
+.h2_b_frame1 {
+    height: 60px;
+    width: 10px;
+    background-color: #234888;
+    position: absolute;
+    left: 47px;
+}
+
+.h2_b_frame2 {
+    height: 60px;
+    width: 10px;
+    background-color: #234888;
+    position: absolute;
+    left: 47px;
+}
+
+.h2_door {
+    height: 90px;
+    width: 70px;
+    background-color: #234888;
+    position: absolute;
+    top: 241px;
+    left: 70px;
+}
+
+.h2_stairs {
+    width: 100px;
+    height: 10px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 330px;
+    left: 45px;
+}
+
+.h2_door_knob {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    background-color: whitesmoke;
+}
+
+.h2_window_fst_floor {
+    width: 45px;
+    height: 75px;
+    position: absolute;
+    top: 211px;
+    left: 185px;
+    background-color: aqua;
+}
+
+/*****************************House 3 - Fixed********************************/
+
+.house_3 p {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 150%;
+}
+
+.house_3 {
+    height: 600px;
+    width: 600px;
+    position: fixed;
+    display: block;
+    background-color: #949a9b;
+    top: 30px;
+    left: 660px; 
+}
+
+.h3_front, .h3_window_snd_floor, .h3_balcony, .h3_stairs, .h3_window_fst_floor {
+     border: 10px solid #234888;
+}
+
+.h3_roof {
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    top: 85px;
+    left: 755px;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 150px solid #234888;
+    z-index: 2;
+}
+
+.h3_roof1 {
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    top: 95px;
+    left: 775px;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 133px solid whitesmoke;
+    z-index: 3;
+}
+
+.h3_front {
+    height: 350px;
+    width: 300px;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 228px;
+    left: 795px;
+    z-index:99;
+}
+
+.h3_window_snd_floor {
+    height: 75px;
+    width: 100px;
+    background-color: aqua;
+    position: fixed;
+    left: 894px;
+    top: 267px;
+}
+
+.h3_frame {
+    height: 75px;
+    width: 10px;
+    background-color: #234888;
+    position: fixed;
+    left: 948px;
+}
+
+.h3_balcony {
+    height: 60px;
+    width: 150px;
+    background-color: #f5f5f5a7;
+    position: fixed;
+    top: 323px;
+    left: 870px;
+}
+
+.h3_b_frame1 {
+    height: 60px;
+    width: 10px;
+    background-color: #234888;
+    position: fixed;
+    left: 925px;
+}
+
+.h3_b_frame2 {
+    height: 60px;
+    width: 10px;
+    background-color: #234888;
+    position: fixed;
+    left: 971px;
+}
+
+.h3_door {
+    height: 90px;
+    width: 70px;
+    background-color: #234888;
+    position: fixed;
+    top: 478px;
+    left: 875px;
+}
+
+.h3_stairs {
+    width: 100px;
+    height: 10px;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 568px;
+    left: 850px;
+}
+
+.h3_door_knob {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: fixed;
+    top: 523px;
+    left: 921px;
+    background-color: whitesmoke;
+}
+
+.h3_window_fst_floor {
+    width: 45px;
+    height: 75px;
+    position: fixed;
+    top: 446px;
+    left: 992px;
+    background-color: aqua;
+}
