@@ -1,0 +1,14 @@
+a {
+    color: white;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #1b8dbb;
+}
+
