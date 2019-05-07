@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<label for="fst_inp">Any text
+    <input type="text" id="fst_inp">
+</label>
+<input id="send_btn" type="submit" value="send to server">
+<div id="result_of_send"></div>
+
+<input id="get_btn" type="submit" value="get from server">
+<div id="result_of_get"></div>
+
+</body>
+<script>
+    $("#send_btn").click(function () {
+        let fst_inp = $("#fst_inp");
+        $.ajax({
+            type: "GET",
+            url: "/send_to_server",
+            data: {
+                "input": fst_inp.val()
+            },
+            success: function (data) {
+                let result = $("#result_of_send");
+                result.empty();
+                result.append(`<p>${data}</p>`);
+            }
+        });
+    });
+    $("#get_btn").click(function () {
+        $.ajax({
+            type: "GET",
+            url: "/get_from_server",
+            success: function (data) {
+                let result = $("#result_of_get");
+                result.empty();
+                result.append(`<p>${data}</p>`);
+            }
+        })
+    });
+</script>
+</html>
